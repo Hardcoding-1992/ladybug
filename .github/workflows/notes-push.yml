@@ -10,7 +10,7 @@ jobs:
     if: github.repository == 'LadybirdBrowser/ladybird'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         with:
           fetch-depth: 0
       - uses: fregante/setup-git-user@v2

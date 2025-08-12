@@ -17,7 +17,7 @@ jobs:
       source_excluding_docs: ${{ steps.filter.outputs.source_excluding_docs }}
     steps:
       # Only need a checkout if we're not running as part of a PR
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v5
         if: github.event_name != 'pull_request'
 
       # FIXME: change into `dorny/paths-filter@v3` when https://github.com/dorny/paths-filter/pull/226 is merged
